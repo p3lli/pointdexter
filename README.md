@@ -3,8 +3,8 @@ This is a really simple API Rest service which calculates equally distribuited g
 of points, given the top left point (`Latitude` and `Longitude`), a `Distance` in km,  
 the number of points in a row (`Width`) and the number of points in a column (`Height`).  
 
-Every subsequent couple of points in the same row have distance `2*Distance`, while  
-every subsequent couple of points in the same (zig-zag) column have distance `sqrt(2)*Distance`.  
+Every subsequent couple of points in the same row have distance `Distance`, while  
+every subsequent couple of points in the same (zig-zag) column have distance `Distance/sqrt(2)`.  
 
 ## Endpoints
 ```

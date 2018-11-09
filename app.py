@@ -55,7 +55,7 @@ def get_first_column(lat, lon, distance, height):
             bearing = 135
         else:
             bearing = 225
-        next_lat, next_lon = get_next_point(this_lat, this_lon, distance*math.sqrt(2), bearing)
+        next_lat, next_lon = get_next_point(this_lat, this_lon, distance/math.sqrt(2), bearing)
         points.append({'lat': next_lat, 'lon': next_lon})
         this_lat, this_lon = next_lat, next_lon
     return points
